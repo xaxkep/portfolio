@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Saxena | Area Sales Manager & Business Development Professional</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0f172a',
+                        accent: '#2563eb',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        .section-padding {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        .experience-card:hover {
+            transform: translateY(-4px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <!-- Standardized Asset: Logo -->
+                    <img src="./assets/logo.png" alt="Logo" class="h-10 w-auto" onerror="this.src='https://ui-avatars.com/api/?name=AS&background=0D8ABC&color=fff'">
+                    <span class="text-xl font-extrabold tracking-tight text-primary">ANKIT<span class="text-accent">SAXENA</span></span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#about" class="text-sm font-medium hover:text-accent transition">About</a>
+                    <a href="#experience" class="text-sm font-medium hover:text-accent transition">Experience</a>
+                    <a href="#skills" class="text-sm font-medium hover:text-accent transition">Expertise</a>
+                    <a href="#contact" class="bg-primary text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-slate-800 transition shadow-lg shadow-slate-200">Contact Me</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-slate-600 focus:outline-none">
+                        <i class="fa-solid fa-bars-staggered text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 shadow-xl">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="#about" class="block px-3 py-4 text-base font-medium border-b border-slate-50">About Me</a>
+                <a href="#experience" class="block px-3 py-4 text-base font-medium border-b border-slate-50">Work Experience</a>
+                <a href="#skills" class="block px-3 py-4 text-base font-medium border-b border-slate-50">Skills & Expertise</a>
+                <a href="#contact" class="block px-3 py-4 text-base font-medium text-accent">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+                <div class="flex-1 text-center lg:text-left">
+                    <span class="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-wider text-accent uppercase bg-blue-50 rounded-full">
+                        Sales & Business Development Leader
+                    </span>
+                    <h1 class="text-5xl lg:text-7xl font-extrabold text-primary leading-tight mb-6">
+                        Driving Growth through <span class="text-accent">Strategic Excellence.</span>
+                    </h1>
+                    <p class="text-lg lg:text-xl text-slate-600 mb-10 max-w-2xl leading-relaxed">
+                        With over 8 years of cross-industry experience in FMCG, Elevators, and Consumer Goods, I specialize in navigating complex sales cycles and building high-performance distribution networks.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                        <a href="#experience" class="px-8 py-4 bg-primary text-white rounded-xl font-bold hover:bg-slate-800 transition-all shadow-xl shadow-slate-200 text-center">
+                            View My Work
+                        </a>
+                        <a href="#contact" class="px-8 py-4 border-2 border-slate-200 text-slate-800 rounded-xl font-bold hover:bg-slate-50 transition-all text-center">
+                            Get in Touch
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-1 relative">
+                    <div class="relative z-10 w-full max-w-md mx-auto aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white">
+                        <!-- Standardized Asset: Hero/Profile Image -->
+                        <img src="./assets/hero.jpg" alt="Ankit Saxena" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800'">
+                    </div>
+                    <!-- Decorative Elements -->
+                    <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-accent rounded-full opacity-10 blur-3xl"></div>
+                    <div class="absolute -top-6 -left-6 w-32 h-32 bg-blue-400 rounded-full opacity-10 blur-2xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-12 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold mb-1">8+</div>
+                    <div class="text-slate-400 text-sm uppercase tracking-widest font-semibold">Years Experience</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-1">5+</div>
+                    <div class="text-slate-400 text-sm uppercase tracking-widest font-semibold">Key Industries</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-1">100+</div>
+                    <div class="text-slate-400 text-sm uppercase tracking-widest font-semibold">Project Deliveries</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-1">Pan-India</div>
+                    <div class="text-slate-400 text-sm uppercase tracking-widest font-semibold">Sales Coverage</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section / Philosophy -->
+    <section id="about" class="section-padding bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-6">Value Proposition</h2>
+                <div class="w-20 h-1.5 bg-accent mx-auto mb-8 rounded-full"></div>
+                <p class="text-lg text-slate-600 italic">
+                    "Success in sales isn't just about closing a deal; it's about building an ecosystem of trust between distributors, architects, and end-users. I bridge the gap between complex project requirements and seamless operational delivery."
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="w-12 h-12 bg-blue-50 text-accent flex items-center justify-center rounded-xl mb-6">
+                        <i class="fa-solid fa-layer-group text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Strategic Planning</h3>
+                    <p class="text-slate-600">Expert in market research, identifying upcoming under-construction projects, and mapping key stakeholders in the hospitality and residential sectors.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="w-12 h-12 bg-blue-50 text-accent flex items-center justify-center rounded-xl mb-6">
+                        <i class="fa-solid fa-users-gear text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Network Management</h3>
+                    <p class="text-slate-600">Proven track record in activating new distributors, managing rural sales channels, and leading cross-functional teams to exceed targets.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="w-12 h-12 bg-blue-50 text-accent flex items-center justify-center rounded-xl mb-6">
+                        <i class="fa-solid fa-chart-line text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">CRM & Operations</h3>
+                    <p class="text-slate-600">Skilled in handling end-to-end sales cycles—from inquiry and site visits to technical coordination and final closure using CRM tools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Professional Journey</h2>
+                    <p class="text-slate-500">A timeline of impact across India's leading companies.</p>
+                </div>
+                <a href="#contact" class="text-accent font-semibold flex items-center gap-2 hover:underline">
+                    Download Full Resume <i class="fa-solid fa-arrow-down text-sm"></i>
+                </a>
+            </div>
+
+            <div class="space-y-12">
+                <!-- Current Role -->
+                <div class="group experience-card bg-slate-50 rounded-3xl p-8 lg:p-10 border border-slate-100">
+                    <div class="flex flex-col lg:flex-row gap-8">
+                        <div class="lg:w-1/4">
+                            <span class="text-accent font-bold text-sm tracking-widest uppercase">Oct 2025 – Present</span>
+                            <h3 class="text-2xl font-extrabold text-primary mt-2">Duroflex Pvt Ltd.</h3>
+                            <p class="text-slate-600 font-medium">Area Sales Manager</p>
+                        </div>
+                        <div class="lg:w-3/4">
+                            <ul class="grid md:grid-cols-2 gap-4">
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-green-500 mt-1"></i>
+                                    <span class="text-slate-600">Leading operations and business development across Rajasthan.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-green-500 mt-1"></i>
+                                    <span class="text-slate-600">Leveraging strong connections with Hotels and Architects for B2B growth.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-green-500 mt-1"></i>
+                                    <span class="text-slate-600">Managing CRM, onboarding, and project pipeline research.</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check text-green-500 mt-1"></i>
+                                    <span class="text-slate-600">Coordinating meetings with builders and site-specific stakeholders.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AH International -->
+                <div class="experience-card bg-white rounded-3xl p-8 lg:p-10 border border-slate-100 shadow-sm">
+                    <div class="flex flex-col lg:flex-row gap-8">
+                        <div class="lg:w-1/4">
+                            <span class="text-slate-400 font-bold text-sm tracking-widest uppercase">Apr 2025 – Oct 2025</span>
+                            <h3 class="text-2xl font-extrabold text-primary mt-2">AH International</h3>
+                            <p class="text-slate-600 font-medium">Assistant Sales Manager</p>
+                        </div>
+                        <div class="lg:w-3/4">
+                            <p class="text-slate-600 mb-4 font-semibold">Key Achievement: Led India-level sales operations and managed high-profile company events.</p>
+                            <p class="text-slate-500 text-sm leading-relaxed">Focused on end-to-end project management, builder consultations, and follow-ups to maintain a robust sales funnel nationwide.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Elite Elevators -->
+                <div class="experience-card bg-white rounded-3xl p-8 lg:p-10 border border-slate-100 shadow-sm">
+                    <div class="flex flex-col lg:flex-row gap-8">
+                        <div class="lg:w-1/4">
+                            <span class="text-slate-400 font-bold text-sm tracking-widest uppercase">Aug 2024 – Jan 2025</span>
+                            <h3 class="text-2xl font-extrabold text-primary mt-2">Elite Elevators</h3>
+                            <p class="text-slate-600 font-medium">Business Development Manager</p>
+                        </div>
+                        <div class="lg:w-3/4">
+                            <p class="text-slate-600 mb-4 font-semibold">Led conversion cycles from inquiry to successful installation.</p>
+                            <p class="text-slate-500 text-sm">Managed site visits and technical coordination with architects for luxury elevator solutions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Experience Button -->
+                <div class="text-center">
+                    <button id="show-more" class="inline-flex items-center gap-2 text-slate-500 font-semibold hover:text-primary transition">
+                        View Previous Experience (Bisleri, ITC, Mars) <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div id="hidden-experience" class="hidden mt-12 space-y-8">
+                         <!-- Bisleri -->
+                         <div class="text-left bg-slate-50 p-6 rounded-2xl border border-dashed border-slate-200">
+                             <h4 class="font-bold text-primary">Bisleri International (2023-2024)</h4>
+                             <p class="text-slate-600 text-sm">Sales Executive: Focused on new distributor activations and rural market expansion.</p>
+                         </div>
+                         <!-- ITC -->
+                         <div class="text-left bg-slate-50 p-6 rounded-2xl border border-dashed border-slate-200">
+                             <h4 class="font-bold text-primary">ITC Ltd. (2021-2023)</h4>
+                             <p class="text-slate-600 text-sm">Rural Sales Officer: Managed secondary sales and distributor handling for half of Rajasthan.</p>
+                         </div>
+                         <!-- Mars -->
+                         <div class="text-left bg-slate-50 p-6 rounded-2xl border border-dashed border-slate-200">
+                             <h4 class="font-bold text-primary">Mars International (2017-2021)</h4>
+                             <p class="text-slate-600 text-sm">Territory Sales Incharge: Handled Institutional, Horeca, and Railway sales across Rajasthan.</p>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-6">Expertise & <span class="text-blue-400">Core Skills</span></h2>
+                    <p class="text-slate-400 mb-10 leading-relaxed">
+                        My skill set is built on a foundation of technical understanding (BCA) and strategic business management (MBA), allowing me to handle both technical sales and high-level leadership.
+                    </p>
+                    <div class="space-y-6">
+                        <!-- Skill Bar -->
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">Sales & Distribution Management</span>
+                                <span class="text-blue-400">95%</span>
+                            </div>
+                            <div class="w-full bg-slate-800 h-2 rounded-full">
+                                <div class="bg-blue-500 h-2 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">CRM & CRM Operations</span>
+                                <span class="text-blue-400">90%</span>
+                            </div>
+                            <div class="w-full bg-slate-800 h-2 rounded-full">
+                                <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">Team Leadership</span>
+                                <span class="text-blue-400">85%</span>
+                            </div>
+                            <div class="w-full bg-slate-800 h-2 rounded-full">
+                                <div class="bg-blue-500 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-6 bg-slate-800 rounded-2xl text-center">
+                        <i class="fa-solid fa-briefcase text-3xl text-blue-400 mb-4"></i>
+                        <h4 class="font-bold">B2B Sales</h4>
+                    </div>
+                    <div class="p-6 bg-slate-800 rounded-2xl text-center">
+                        <i class="fa-solid fa-handshake text-3xl text-blue-400 mb-4"></i>
+                        <h4 class="font-bold">Client Relations</h4>
+                    </div>
+                    <div class="p-6 bg-slate-800 rounded-2xl text-center">
+                        <i class="fa-solid fa-map-location-dot text-3xl text-blue-400 mb-4"></i>
+                        <h4 class="font-bold">Market Mapping</h4>
+                    </div>
+                    <div class="p-6 bg-slate-800 rounded-2xl text-center">
+                        <i class="fa-solid fa-comments text-3xl text-blue-400 mb-4"></i>
+                        <h4 class="font-bold">Communication</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-primary mb-16">Academic Foundation</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="p-8 border border-slate-100 rounded-3xl bg-slate-50 flex items-center gap-6">
+                    <div class="flex-shrink-0 w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-sm">
+                        <i class="fa-solid fa-graduation-cap text-2xl text-accent"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-primary">MBA</h3>
+                        <p class="text-slate-600">Maharishi Arvind University (2021-23)</p>
+                        <span class="text-accent font-bold text-sm">71% Aggregate</span>
+                    </div>
+                </div>
+                <div class="p-8 border border-slate-100 rounded-3xl bg-slate-50 flex items-center gap-6">
+                    <div class="flex-shrink-0 w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-sm">
+                        <i class="fa-solid fa-laptop-code text-2xl text-accent"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-primary">BCA</h3>
+                        <p class="text-slate-600">Maharishi Arvind College (2015-19)</p>
+                        <span class="text-accent font-bold text-sm">68% Aggregate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-primary rounded-[3rem] p-8 lg:p-20 overflow-hidden relative">
+                <div class="relative z-10 grid lg:grid-cols-2 gap-16">
+                    <div>
+                        <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">Let's build something <span class="text-blue-400">great together.</span></h2>
+                        <p class="text-slate-400 text-lg mb-10">Available for new opportunities in senior sales management and leadership roles.</p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4 group">
+                                <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center group-hover:bg-accent transition">
+                                    <i class="fa-solid fa-phone text-white"></i>
+                                </div>
+                                <span class="text-xl text-white font-medium">800-565-1765</span>
+                            </div>
+                            <div class="flex items-center gap-4 group">
+                                <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center group-hover:bg-accent transition">
+                                    <i class="fa-solid fa-envelope text-white"></i>
+                                </div>
+                                <span class="text-xl text-white font-medium">ankitsaxenayashwant@gmail.com</span>
+                            </div>
+                            <div class="flex items-center gap-4 group">
+                                <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center group-hover:bg-accent transition">
+                                    <i class="fa-solid fa-location-dot text-white"></i>
+                                </div>
+                                <span class="text-lg text-white">Jhotwara, Jaipur 302012</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 lg:p-10 rounded-[2rem]">
+                        <form class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Full Name</label>
+                                <input type="text" placeholder="John Doe" class="w-full px-5 py-4 bg-slate-50 border-transparent focus:border-accent focus:bg-white focus:ring-0 rounded-xl transition text-slate-900 outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Email Address</label>
+                                <input type="email" placeholder="john@company.com" class="w-full px-5 py-4 bg-slate-50 border-transparent focus:border-accent focus:bg-white focus:ring-0 rounded-xl transition text-slate-900 outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Message</label>
+                                <textarea rows="4" placeholder="How can I help you?" class="w-full px-5 py-4 bg-slate-50 border-transparent focus:border-accent focus:bg-white focus:ring-0 rounded-xl transition text-slate-900 outline-none"></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-4 bg-accent text-white font-bold rounded-xl hover:bg-blue-600 transition shadow-lg shadow-blue-200">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Background decoration -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-accent rounded-full opacity-10 -translate-y-1/2 translate-x-1/2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-slate-400 text-sm">
+                    © 2026 Ankit Saxena. All rights reserved.
+                </div>
+                <div class="flex gap-6">
+                    <a href="#" class="text-slate-400 hover:text-accent transition"><i class="fa-brands fa-linkedin-in text-xl"></i></a>
+                    <a href="#" class="text-slate-400 hover:text-accent transition"><i class="fa-brands fa-whatsapp text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Hide menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Show More Experience
+        const showMoreBtn = document.getElementById('show-more');
+        const hiddenExp = document.getElementById('hidden-experience');
+
+        showMoreBtn.addEventListener('click', () => {
+            hiddenExp.classList.toggle('hidden');
+            showMoreBtn.innerHTML = hiddenExp.classList.contains('hidden') 
+                ? 'View Previous Experience (Bisleri, ITC, Mars) <i class="fa-solid fa-chevron-down"></i>' 
+                : 'Hide Previous Experience <i class="fa-solid fa-chevron-up"></i>';
+        });
+
+        // Simple Smooth Scroll handling for Safari (Optional as scroll-smooth is on html tag)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
